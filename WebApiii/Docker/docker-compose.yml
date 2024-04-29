@@ -1,0 +1,32 @@
+version: '3.3'
+
+services:
+  WebApiii:
+    container_name: WebApiii-container
+    build:
+      dockerfile: WebApiii\WebApiii\dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+    ports:
+      - "5000:80"
+    networks:
+      - nginx-network
+        
+  proxy-manager:
+    image: 'jc21/nginx-proxy-manager:latest'
+    restart: unless-stopped
+    ports:
+      - '80:80'
+      - '443:443'
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
+    networks:
+      - nginx-network
+
+networks:
+  nginx-network:
+    external: true
+
+

@@ -1,0 +1,19 @@
+FROM mcr.microsoft.com/dotnet/sdk:7.0 as build-stage
+
+WORKDIR /src
+COPY . .
+
+RUN dotnet restore
+RUN dotnet build WebApiii.csproj -o ./build -r linux-x64 /p:PublishReadyToRun=true /p:GenerateFullPaths=true
+RUN dotnet publish WebApiii.csproj -c Release -o ./publish -r linux-x64 --self-contained true --no-restore /p:PublishTrimmed=true /p:PublishReadyToRun=true /p:PublishSingleFile=true
+
+
+FROM mcr.microsoft.com/dotnet/aspnet:7.0 as base
+COPY --from=build-stage /src/publish /src/app
+WORKDIR /src/app
+RUN apt-get update && apt install curl -y
+
+
+EXPOSE 5248
+HEALTHCHECK --interval=1m --timeout=10s CMD curl --fail http://localhost:5248 || exit 1  
+CMD ["./UI"]

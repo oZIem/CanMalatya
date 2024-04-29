@@ -1,0 +1,73 @@
+{
+  "ContentRoots": [
+    "/app/wwwroot"
+  ],
+  "Root": {
+    "Children": {
+      "Upload": {
+        "Children": {
+          "product": {
+            "Children": {
+              "001": {
+                "Children": {
+                  "001.png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "Upload/product/001/001.png"
+                    },
+                    "Patterns": null
+                  },
+                  "pngwing.com (1).png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "Upload/product/001/pngwing.com (1).png"
+                    },
+                    "Patterns": null
+                  },
+                  "pngwing.com.png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "Upload/product/001/pngwing.com.png"
+                    },
+                    "Patterns": null
+                  }
+                },
+                "Asset": null,
+                "Patterns": null
+              },
+              "002": {
+                "Children": {
+                  "002.png": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "Upload/product/002/002.png"
+                    },
+                    "Patterns": null
+                  }
+                },
+                "Asset": null,
+                "Patterns": null
+              }
+            },
+            "Asset": null,
+            "Patterns": null
+          }
+        },
+        "Asset": null,
+        "Patterns": null
+      }
+    },
+    "Asset": null,
+    "Patterns": [
+      {
+        "ContentRootIndex": 0,
+        "Pattern": "**",
+        "Depth": 0
+      }
+    ]
+  }
+}
