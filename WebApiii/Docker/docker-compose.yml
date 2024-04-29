@@ -6,7 +6,7 @@ services:
     restart: always
     build:
       context: ../../
-      dockerfile: src/WebApiii/Dockerfile
+      dockerfile: dockerfile
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80
