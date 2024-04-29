@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:7.0 as build-stage
 
 WORKDIR /src
-COPY . .
+COPY src/. .
 
 RUN dotnet restore
 RUN dotnet build WebApiii.csproj -o ./build -r linux-x64 /p:PublishReadyToRun=true /p:GenerateFullPaths=true
