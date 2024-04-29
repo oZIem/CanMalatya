@@ -5,7 +5,7 @@ services:
     container_name: WebApiii-container
     restart: always
     build:
-      context: CanMalatya\WebApiii
+      context: C:\Users\Excalibur\Documents\GitHub\CanMalatya\WebApiii
       dockerfile: dockerfile
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
