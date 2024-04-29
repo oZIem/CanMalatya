@@ -5,7 +5,8 @@ services:
     container_name: WebApiii-container
     restart: always
     build:
-      dockerfile: WebApiii/dockerfile
+      context: CanMalatya\WebApiii
+      dockerfile: dockerfile
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80
