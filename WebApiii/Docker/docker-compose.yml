@@ -6,8 +6,8 @@ services:
     container_name: webapiii-container # Hizmet i�in benzersiz bir ad
     restart: always # Konteyner durdu�unda otomatik yeniden ba�latma
     build:
-      context: ../../ # Dockerfile'� i�eren dizin
-      dockerfile: CanMalatya/WebApiii/Docker/Dockerfile # Dockerfile'�n do�ru yolu
+      context: . # Dockerfile'� i�eren dizin
+      dockerfile: WebApiii/Docker/Dockerfile # Dockerfile'�n do�ru yolu
 
     
     environment:
