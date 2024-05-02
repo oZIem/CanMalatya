@@ -6,9 +6,8 @@ services:
     container_name: webapiii-container # Hizmet i�in benzersiz bir ad
     restart: always # Konteyner durdu�unda otomatik yeniden ba�latma
     build:
-      context: . # Dockerfile'� i�eren dizin
-      dockerfile: CanMalatya\WebApiii\Docker\Dockerfile # Dockerfile'ın tam yolu
-
+      context: ../../ # Dockerfile'ı içeren dizin
+      dockerfile: Dockerfile # Dockerfile'ın doğru yolu
     
     environment:
       - ASPNETCORE_ENVIRONMENT=Production # �retim ortam�
