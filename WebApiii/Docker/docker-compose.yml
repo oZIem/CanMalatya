@@ -7,7 +7,9 @@ services:
     restart: always # Konteyner durdu�unda otomatik yeniden ba�latma
     build:
       context: . # Dockerfile'� i�eren dizin
-      dockerfile: WebApiii/WebApiii/Docker/Dockerfile # Dockerfile'�n do�ru yolu
+      dockerfile: CanMalatya/WebApiii/Docker/Dockerfile # Dockerfile'�n do�ru yolu
+
+    
     environment:
       - ASPNETCORE_ENVIRONMENT=Production # �retim ortam�
       - ASPNETCORE_URLS=http://+:80 # HTTP portu i�in dinleme
