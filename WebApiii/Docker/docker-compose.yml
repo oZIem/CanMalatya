@@ -7,7 +7,7 @@ services:
     restart: always # Konteyner durdu�unda otomatik yeniden ba�latma
     build:
       context: . # Dockerfile'� i�eren dizin
-      dockerfile: WebApiii/Docker/Dockerfile # Dockerfile'�n do�ru yolu
+      dockerfile: CanMalatya\WebApiii\Docker\Dockerfile # Dockerfile'ın tam yolu
 
     
     environment:
