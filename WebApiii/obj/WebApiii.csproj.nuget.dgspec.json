@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Excalibur\\Desktop\\KOD\\apiii\\WebApiii\\WebApiii\\WebApiii.csproj": {}
+    "C:\\Users\\Excalibur\\Documents\\GitHub\\CanMalatya\\WebApiii\\WebApiii.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Excalibur\\Desktop\\KOD\\apiii\\WebApiii\\WebApiii\\WebApiii.csproj": {
+    "C:\\Users\\Excalibur\\Documents\\GitHub\\CanMalatya\\WebApiii\\WebApiii.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Excalibur\\Desktop\\KOD\\apiii\\WebApiii\\WebApiii\\WebApiii.csproj",
+        "projectUniqueName": "C:\\Users\\Excalibur\\Documents\\GitHub\\CanMalatya\\WebApiii\\WebApiii.csproj",
         "projectName": "WebApiii",
-        "projectPath": "C:\\Users\\Excalibur\\Desktop\\KOD\\apiii\\WebApiii\\WebApiii\\WebApiii.csproj",
+        "projectPath": "C:\\Users\\Excalibur\\Documents\\GitHub\\CanMalatya\\WebApiii\\WebApiii.csproj",
         "packagesPath": "C:\\Users\\Excalibur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Excalibur\\Desktop\\KOD\\apiii\\WebApiii\\WebApiii\\obj\\",
+        "outputPath": "C:\\Users\\Excalibur\\Documents\\GitHub\\CanMalatya\\WebApiii\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Excalibur\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qOoX8U1eQEDmXjQzHjJaj8mrfajy/cTBXJSYMg5Bo6A=",
+  "Hash": "axPsS/MxQ9ctwkqml/rZlTFiygc+nKw9hgdokFP35HM=",
   "Source": "WebApiii",
   "BasePath": "_content/WebApiii",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "WebApiii\\wwwroot",
       "Source": "WebApiii",
-      "ContentRoot": "C:\\Users\\Excalibur\\Desktop\\KOD\\apiii\\WebApiii\\WebApiii\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Excalibur\\Documents\\GitHub\\CanMalatya\\WebApiii\\wwwroot\\",
       "BasePath": "_content/WebApiii",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Excalibur\\Desktop\\KOD\\apiii\\WebApiii\\WebApiii\\wwwroot\\Upload\\product\\001\\001.png",
+      "Identity": "C:\\Users\\Excalibur\\Documents\\GitHub\\CanMalatya\\WebApiii\\wwwroot\\Upload\\product\\001\\001.png",
       "SourceId": "WebApiii",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Excalibur\\Desktop\\KOD\\apiii\\WebApiii\\WebApiii\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Excalibur\\Documents\\GitHub\\CanMalatya\\WebApiii\\wwwroot\\",
       "BasePath": "_content/WebApiii",
       "RelativePath": "Upload/product/001/001.png",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\Upload\\product\\001\\001.png"
     },
     {
-      "Identity": "C:\\Users\\Excalibur\\Desktop\\KOD\\apiii\\WebApiii\\WebApiii\\wwwroot\\Upload\\product\\001\\pngwing.com (1).png",
+      "Identity": "C:\\Users\\Excalibur\\Documents\\GitHub\\CanMalatya\\WebApiii\\wwwroot\\Upload\\product\\001\\pngwing.com (1).png",
       "SourceId": "WebApiii",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Excalibur\\Desktop\\KOD\\apiii\\WebApiii\\WebApiii\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Excalibur\\Documents\\GitHub\\CanMalatya\\WebApiii\\wwwroot\\",
       "BasePath": "_content/WebApiii",
       "RelativePath": "Upload/product/001/pngwing.com (1).png",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\Upload\\product\\001\\pngwing.com (1).png"
     },
     {
-      "Identity": "C:\\Users\\Excalibur\\Desktop\\KOD\\apiii\\WebApiii\\WebApiii\\wwwroot\\Upload\\product\\001\\pngwing.com.png",
+      "Identity": "C:\\Users\\Excalibur\\Documents\\GitHub\\CanMalatya\\WebApiii\\wwwroot\\Upload\\product\\001\\pngwing.com.png",
       "SourceId": "WebApiii",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Excalibur\\Desktop\\KOD\\apiii\\WebApiii\\WebApiii\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Excalibur\\Documents\\GitHub\\CanMalatya\\WebApiii\\wwwroot\\",
       "BasePath": "_content/WebApiii",
       "RelativePath": "Upload/product/001/pngwing.com.png",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\Upload\\product\\001\\pngwing.com.png"
     },
     {
-      "Identity": "C:\\Users\\Excalibur\\Desktop\\KOD\\apiii\\WebApiii\\WebApiii\\wwwroot\\Upload\\product\\002\\002.png",
+      "Identity": "C:\\Users\\Excalibur\\Documents\\GitHub\\CanMalatya\\WebApiii\\wwwroot\\Upload\\product\\002\\002.png",
       "SourceId": "WebApiii",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Excalibur\\Desktop\\KOD\\apiii\\WebApiii\\WebApiii\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Excalibur\\Documents\\GitHub\\CanMalatya\\WebApiii\\wwwroot\\",
       "BasePath": "_content/WebApiii",
       "RelativePath": "Upload/product/002/002.png",
       "AssetKind": "All",

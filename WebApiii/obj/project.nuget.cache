@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rPrZort5eN6T42T9STcpyTJUN0LXUoehgx1fBS4NGUEqO6/Rdh9YeN1AUYw+GD1bG+rBZX27UMcTbu3tfRopyw==",
+  "dgSpecHash": "sbllnb5QX2GTiiRJaVwSsiHz0plVkG35rETKTrwfmmB3x5zM6eESc080NrfkSSfHlD+Z0eiCD3D93F8YF0x1nA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Excalibur\\Desktop\\KOD\\apiii\\WebApiii\\WebApiii\\WebApiii.csproj",
+  "projectFilePath": "C:\\Users\\Excalibur\\Documents\\GitHub\\CanMalatya\\WebApiii\\WebApiii.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Excalibur\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Excalibur\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

@@ -7,7 +7,7 @@ services:
     restart: always # Konteyner durdu�unda otomatik yeniden ba�latma
     build:
       context: ../../ # Dockerfile'ı içeren dizin
-      dockerfile: Dockerfile # Dockerfile'ın doğru yolu
+      dockerfile: WebApiii\Dockerfile # Dockerfile'ın doğru yolu
     
     environment:
       - ASPNETCORE_ENVIRONMENT=Production # �retim ortam�
