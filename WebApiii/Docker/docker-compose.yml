@@ -1,32 +1,58 @@
-version: '3.1'
+version: '3.4'
 
 services:
-  test.api:
-    container_name: WebApiii-container
-    restart: always
+  # ASP.NET Core tabanl� API hizmeti
+  webapiii:
+    container_name: webapiii-container # Hizmet i�in benzersiz bir ad
+    restart: always # Konteyner durdu�unda otomatik yeniden ba�latma
     build:
-      context: C:\Users\Excalibur\Documents\GitHub\CanMalatya\WebApiii
-      dockerfile: dockerfile
+      context: . # Dockerfile'� i�eren dizin
+      dockerfile: WebApiii/WebApiii/Docker/Dockerfile # Dockerfile'�n do�ru yolu
     environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=http://+:80
+      - ASPNETCORE_ENVIRONMENT=Production # �retim ortam�
+      - ASPNETCORE_URLS=http://+:80 # HTTP portu i�in dinleme
+      - DB_HOST=mysql # MySQL hizmetine ba�lant� i�in ana bilgisayar
+      - DB_PORT=3306 # MySQL i�in varsay�lan port
+      - DB_USER=root # MySQL kullan�c� ad�
+      - DB_PASSWORD=2205 # MySQL kullan�c� �ifresi
+      - DB_NAME=products.db # Kullan�lacak veritaban� ad�
     ports:
-      - "5000:80"
+      - "5000:80" # Yerel makineden konteynerin HTTP portuna y�nlendirme
     networks:
-      - nginx-network
-        
-  proxy-manager:
-    image: 'jc21/nginx-proxy-manager:latest'
-    restart: unless-stopped
+      - ngnix-network # MySQL ile ayn� a�da olmal�
+
+  # MySQL veritaban� hizmeti
+  mysql:
+    image: 'mysql:8.0' # MySQL 8.0 g�r�nt�s�
+    container_name: mysql-container # Benzersiz bir ad
+    environment:
+      - MYSQL_ROOT_PASSWORD=mAlatya.44a # Root �ifresi
+      - MYSQL_DATABASE=products.db # Varsay�lan veritaban�
     ports:
-      - '80:80'
-      - '443:443'
+      - '3306:3306' # Yerel makineden MySQL portuna y�nlendirme
     volumes:
-      - ./data:/data
-      - ./letsencrypt:/etc/letsencrypt
+      - mysql-data:/var/lib/mysql # MySQL veritaban� i�in kal�c� hacim
     networks:
-      - nginx-network
+      - ngnix-network # Ayn� a�da olmal�
+
+  # Nginx Proxy Manager hizmeti
+  nginx-proxy-manager:
+    image: 'jc21/nginx-proxy-manager:latest' # Resmi Docker Hub g�r�nt�s�
+    container_name: nginx-proxy-container # Benzersiz bir ad
+    restart: unless-stopped # Konteyner durmad�k�a yeniden ba�lat
+    ports:
+      - '80:80' # HTTP trafi�i i�in port y�nlendirme
+      - '81:81' # Y�netici paneli i�in port y�nlendirme
+      - '443:443' # HTTPS trafi�i i�in port y�nlendirme
+    volumes:
+      - ./data:/data # Nginx Proxy Manager i�in veri e�leme
+      - ./letsencrypt:/etc/letsencrypt # SSL sertifikalar� i�in e�leme
+    networks:
+      - ngnix-network # Ayn� a�da olmal�
 
 networks:
-  nginx-network:
-    external: true
+  ngnix-network:
+    external: true # Harici bir a�
+
+volumes:
+  mysql-data: # MySQL i�in kal�c� hacim
