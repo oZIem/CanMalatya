@@ -7,7 +7,7 @@ using WebApiii.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
+builder.WebHost.UseSetting("https_port", "443");
 
 builder.Services.AddDbContext<ProductsContext>();
 builder.Services.AddDbContext<JobPostingsContext>();
@@ -27,7 +27,7 @@ builder.Services.Configure<IdentityOptions>(options =>
     options.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
 
 
-    //hesap kilitlenmesi(ne kadar süreliðine kullanýcýyý kitlemek
+    //hesap kilitlenmesi(ne kadar sï¿½reliï¿½ine kullanï¿½cï¿½yï¿½ kitlemek
     options.Lockout.MaxFailedAccessAttempts = 5;
     options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
 
